@@ -30,34 +30,15 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 
 /* We start writing out flexbox here. The above is just page setup */
-
-.container{
-    display: flex;
-    border: 5px solid pink;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
-
-.container1 {
+.container {
     display:flex;
-    border: 5px solid pink;
-    justify-content: space-between;
-    flex-direction: column;
-    min-height: 100vh;
+    border: 10px solid goldenrod;
+    min-height:100vh; 
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 } 
 .box{
-    /*flex: 1;        all width we have*/
-}
-.box1{
-    order:1;
-    font-size: 30px;
-}
-.box2{
-    order: 2;   /*like z-index*/
-    font-size: 100px;
-}
-.box3{
-    order: -1;
-    font-size: 150px;
+    width: calc(33.3% - 20px);
+    margin: 10px;
+    border:5px solid pink
 }
